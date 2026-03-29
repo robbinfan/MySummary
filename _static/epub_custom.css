@@ -1,0 +1,114 @@
+/* epub_custom.css - 改善 epub 阅读体验 */
+
+body {
+    font-family: Georgia, "Noto Serif CJK SC", "Source Han Serif SC", serif;
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 0 1.5em;
+    color: #1a1a1a;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    line-height: 1.4;
+    page-break-before: always;
+    epub-page-break-before: always;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+p {
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
+    text-indent: 2em;
+}
+
+/* 第一段不缩进 */
+h1 + p, h2 + p, h3 + p {
+    text-indent: 0;
+}
+
+blockquote {
+    margin: 1em 2em;
+    font-style: italic;
+    color: #444;
+    border-left: 3px solid #ccc;
+    padding-left: 1em;
+}
+
+pre, code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.85em;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+
+pre {
+    padding: 0.8em;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0.8em 0;
+}
+
+code {
+    padding: 0.1em 0.3em;
+}
+
+li {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    text-indent: 0;
+}
+
+/* 隐藏网页导航元素 */
+div.related, div.sphinxsidebar, div.footer {
+    display: none;
+}
+
+div.body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+div.documentwrapper {
+    margin: 0;
+    padding: 0;
+}
+
+/* 图片居中 */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0.5em auto;
+}
+
+/* 标注/警告框 */
+div.note, div.warning, div.tip {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    background-color: #f9f9f9;
+}
+
+div.note p.admonition-title { color: #31708f; }
+div.warning p.admonition-title { color: #a94442; }
