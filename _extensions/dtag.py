@@ -18,7 +18,7 @@ from docutils.parsers.rst import directives
 
 class Tags(nodes.Element):
     def __init__(self, content):
-        super().__init__(self)
+        super().__init__(content)
         raw_tags = content.split(',')
         self.tags = [x.strip() for x in raw_tags]
 
