@@ -190,3 +190,10 @@ texinfo_documents = [
      author, 'MySummary', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+# -- Options for epub output ----------------------------------------------
+
+epub_show_urls = 'no'
+epub_tocdepth = 3
+epub_css_files = ['epub_custom.css']
